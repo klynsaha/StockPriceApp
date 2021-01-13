@@ -6,4 +6,4 @@ The web app was built in Python using the following libraries:
 * streamlit
 * yfinance
 
-Deployed to Heroku [StockPrice-WebApp](https://stock-price-webapplication.herokuapp.com)
+Deployed to Heroku [StockPrice-WebApp](https://stock-price-web.herokuapp.com)
