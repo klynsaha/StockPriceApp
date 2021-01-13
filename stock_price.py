@@ -18,12 +18,7 @@ tickerSymbol = companies[name]
 #get data on this ticker
 tickerData = yf.Ticker(tickerSymbol)
 #get the historical prices for this ticker
-@st.cache
-def getData(period, start, end):
-    Df = tickerData.history(period=period, start=start, end=end)
-    return Df
-
-tickerDf = getData('1d', start_date, end_date)
+tickerDf = tickerData.history(period='1d', start=start_date, end=end_date)
 # Open	High	Low	Close	Volume	Dividends	Stock Splits
 
 st.write("""
